@@ -1,0 +1,247 @@
+/* Base Rules */
+* { 
+  box-sizing: border-box;
+}
+  
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: #222;
+  background: #f9f8fa;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+h1{
+  font-size: 2.25em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h2{
+  font-size: 1.75em;
+  margin-bottom: 3%;
+  text-transform: uppercase;
+}
+h1,
+h2,
+h3{
+	color: #0162ab ;
+}
+
+
+p{
+	font-size: 1em;
+	line-height: 1.48;
+	margin-bottom: 1.5em;
+}
+
+
+ul{
+	list-style: none;
+	padding-left: 0;
+}
+
+.main-header-callout{
+
+  font-size: 2.75em;
+  font-weight: 700;
+  color: white;
+  margin-bottom: .375em;
+}
+
+
+.main-header-introtxt{
+  max-width: 85%;
+  font-weight: 2em;
+  color: white;
+  line-height: 1.65em;
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+/* layout Rules */
+
+.wrapper{
+		width: 94.02985075%;
+    max-width: 1260px;
+		margin: auto;
+	}
+
+  .venue-location {
+  text-align: center;
+  margin-bottom: 4em;
+}
+
+.main-nav{
+  width: 100%;
+  background: #0162ab;
+  min-height: 30px;
+  padding: 10px;
+  text-align: center;
+}
+
+
+.main-header{
+  text-align: center;
+  background: url('../imgs/headerBackgroundALT.jpg') no-repeat top center ;
+  background-size: cover;
+  overflow: hidden;
+  padding: 5% 3%;
+  margin-bottom: 5%;
+}
+
+.intro{
+  width: 100%;
+  border-bottom:solid 2px #a7a9ac;
+  padding: 2%;
+  margin:0 auto 6%;
+}
+
+.main-footer{
+  text-align: center;
+  color: #a7a9ac ;
+  background-color:#2e2e2e;
+  min-height: 30px;
+  padding: 10px;
+  margin-top: 15px;
+}
+
+#logo{
+ width:45%;
+ height:20%;
+ margin-top: -5%;
+}
+
+
+/* module Rules */
+
+.venue-location img {
+  max-width: 100%;
+}
+
+.button {
+  width: 70%;
+  font-weight: 700;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color:#0162ab;
+  background: #ffffff;
+  border:solid 2px #0162ab;
+  padding: 10px 0;
+  margin: auto;
+  transition-property: color, background, border;
+  transition-duration: .4s;
+}
+
+
+
+/* ---- Float clearfix ---- */
+
+.clearfix::after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+
+
+
+
+
+
+/* State Rules */
+
+
+.button:hover{
+  color:#fff;
+  background: #5ea7dd;
+  border:none;
+}
+
+
+
+
+
+
+
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+
+@media (min-width: 0) and (max-width: 768px) {
+  .wrapper {
+    padding: 0 1.225em 2.5em;
+  }
+  h1{
+    font-size: 2em;
+    font-weight: 500;
+  }
+
+ #logo{
+ width:65%;
+ height:30%;
+ margin-top: -2%;
+}
+
+
+  h2{
+    font-size: 1.75em;
+    padding-top: 5%;
+    margin-bottom: 8%;
+  }
+}
+@media (min-width: 769px) {
+  .wrapper {
+    padding: 0 2.25em 4em;
+  }
+  .venue-location {
+    width: 47%;
+    float: left;
+    margin-left: 1.5%;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) { 
+  .venue-location:nth-child(3n+1) {
+    margin-left: 1.5%;
+    clear: none;
+  }
+}
+@media (min-width: 1025px) { 
+  .venue-location {
+    width: 31.3333%;
+  }
+  .venue-location:nth-child(4n+1) {
+    margin-left: 0;
+    clear: left;
+  }
+
+    .main-header-callout{
+
+    font-size: 2.75em;
+    font-weight: 700;
+    color: white;
+    margin-bottom: .375em;
+  }
+
+
+  .main-header-introtxt{
+    max-width: 85%;
+    font-weight: 2.5em;
+    font-weight: 500;
+    color: white;
+    line-height: 1.65em;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
